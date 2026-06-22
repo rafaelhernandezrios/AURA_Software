@@ -1,80 +1,80 @@
-# Aura: Manual de Usuario
+# Aura: User Manual
 
-¡Bienvenido a Aura! Nuestro sistema de biosensado más reciente, desarrollado con una atención meticulosa a la experiencia del usuario, te ofrece una manera intuitiva y potente de interactuar con los datos de tu EEG cap.
+Welcome to Aura! Our latest biosensing system, developed with meticulous attention to user experience, offers an intuitive and powerful way to interact with your EEG cap data.
 
-## Descripción General
+## Overview
 
-Aura consta de una placa de biosensado y un gorro de EEG diseñados bajo una misma dirección de diseño. Este sistema proporciona una experiencia mejorada al usuario a través de la impresión en pantalla en el gorro, que indica la posición de cada electrodo, y una carcasa de biosensado más resistente y delgada impresa en 3D en SLS (sinterización láser selectiva).
+Aura consists of a biosensing board and an EEG cap designed under a unified design direction. This system provides an enhanced user experience through on-screen printing on the cap, which indicates the position of each electrode, and a more durable and thinner 3D-printed SLS (selective laser sintering) biosensing enclosure.
 
-## Tutorial de Uso
+## Usage Tutorial
 
-### Conexión en Vivo
+### Live Connection
 
-Este será tu panel principal. Desde aquí, puedes iniciar una conexión en vivo haciendo clic en el botón "Conexión".
+This will be your main panel. From here, you can start a live connection by clicking the "Connection" button.
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_1.png  width="60%">
 
-1. **Selecciona el Puerto COM Identificado**: Aquí selecciona tu puerto COM identificado para Aura y haz clic en "Conectar". En pocos segundos, comenzarás a recibir datos en vivo.
+1. **Select the Identified COM Port**: Select your identified COM port for Aura and click "Connect". Within a few seconds, you will begin receiving live data.
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_2.png width="60%">
 
-### Configuración de Electrodos
+### Electrode Configuration
 
-Asegúrate de que tus electrodos estén bien conectados y posicionados.
+Make sure your electrodes are properly connected and positioned.
 
-1. **Configuración de Electrodos**: Haz clic en "Archivo" -> "Configurar Electrodos" para abrir el panel de configuración. También puedes hacer clic en el icono de Configuración rápida en la esquina superior izquierda del cerebro.
+1. **Electrode Configuration**: Click "File" -> "Configure Electrodes" to open the configuration panel. You can also click the Quick Settings icon in the upper-left corner of the brain.
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_3.png width="60%">
 
-2. **Ajuste de los Números de Canal de Electrodo**: Mueve los números de canal de electrodo para reflejar la configuración real de tu auricular Aura. Luego, guarda la configuración de posiciones con el botón sobre el cuero cabelludo.
+2. **Adjust Electrode Channel Numbers**: Move the electrode channel numbers to reflect your actual Aura headset configuration. Then save the position configuration with the button on the scalp.
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_4.png width="60%">
 
-3. **Indicadores de Calidad de Contacto en Tiempo Real**: Durante el ajuste de los electrodos en el cuero cabelludo, los indicadores de calidad de contacto se irán volviendo "buenos". El color rojo indica una mala conexión entre el cuero cabelludo y el electrodo correspondiente del número de canal del dispositivo, por lo que puede requerirse más gel conductor.
+3. **Real-Time Contact Quality Indicators**: While adjusting the electrodes on the scalp, the contact quality indicators will gradually turn "good". Red indicates a poor connection between the scalp and the corresponding electrode for that channel number, so more conductive gel may be required.
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_5.png width="60%">
 
-### Grabación
+### Recording
 
-1. **Inicio de la Grabación**: Simplemente haz clic en el botón "Grabar" para comenzar a grabar.
+1. **Start Recording**: Simply click the "Record" button to begin recording.
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_7.png width="60%">
 
-2. **Directorio de Archivos Generados**: Durante una conexión en vivo, los archivos se generan automáticamente en la carpeta de Documentos de tu computadora, bajo ...Usuarios\[ tú ]\Documentos\Aura EEG Records. Puedes elegir tu propia carpeta de destino yendo a "Archivo" -> "Configuración" o haciendo clic en el icono de Guardar arriba del botón de Grabación.
+2. **Generated Files Directory**: During a live connection, files are automatically generated in your computer's Documents folder, under ...Users\[ you ]\Documents\Aura EEG Records. You can choose your own destination folder by going to "File" -> "Settings" or by clicking the Save icon above the Record button.
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_8.png width="60%">
 
-3. **Registro de Eventos**: Durante la grabación, puedes presionar la barra espaciadora de tu teclado para registrar un evento en tu archivo CSV para referencia futura. Se indicará con un cambio de color en la luz de Evento.
+3. **Event Logging**: During recording, you can press the spacebar on your keyboard to log an event in your CSV file for future reference. This will be indicated by a color change in the Event light.
 
  <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_9.png width="60%">
 
-### Transmisión
+### Streaming
 
-Mientras una conexión en vivo está activa, puedes activar o desactivar la casilla de verificación "LSL Stream Out". De esta manera, enviarás tus señales en bruto a través de la red. También funciona con tus sesiones grabadas.
+While a live connection is active, you can enable or disable the "LSL Stream Out" checkbox. This will send your raw signals over the network. It also works with your recorded sessions.
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_11.png width="60%">
 
-#### Uso Avanzado: Integración con LSL y Python
+#### Advanced Usage: LSL and Python Integration
 
-Este documento explica los pasos para obtener datos en bruto del software Aura mediante el protocolo Lab Stream Layer (LSL) utilizando el lenguaje de programación Python. Para obtener más información sobre LSL, consulta: [Lab Stream Layer Documentation](https://labstreaminglayer.readthedocs.io/).
+This section explains the steps to obtain raw data from the Aura software via the Lab Stream Layer (LSL) protocol using the Python programming language. For more information about LSL, see: [Lab Stream Layer Documentation](https://labstreaminglayer.readthedocs.io/).
 
-**Pasos:**
+**Steps:**
 
-1. Abre el software Aura y comienza a leer las señales de EEG.
+1. Open the Aura software and start reading EEG signals.
 
-2. Haz clic en la casilla de verificación "LSL" ubicada encima de los gráficos para iniciar la transmisión de los datos de EEG en bruto. El software Aura genera automáticamente una capa de transmisión LSL llamada "AURA".
+2. Click the "LSL" checkbox located above the graphs to start streaming raw EEG data. The Aura software automatically generates an LSL stream layer called "AURA".
 
-3. Para visualizar los datos de EEG en bruto, ejecuta el siguiente archivo: `1_LSL_read_raw_data.py`.
+3. To visualize raw EEG data, run the following file: `1_LSL_read_raw_data.py`.
 
-4. Para filtrar los datos en bruto provenientes de la transmisión LSL 'AURA', ejecuta el siguiente archivo: `2_LSL_filter_raw_data.py`. Este script leerá los datos en bruto, los filtrará y generará una nueva transmisión llamada "AURAFilteredEEG" y "AURAKalmanFilteredEEG".
+4. To filter raw data from the 'AURA' LSL stream, run the following file: `2_LSL_filter_raw_data.py`. This script will read the raw data, filter it, and generate a new stream called "AURAFilteredEEG" and "AURAKalmanFilteredEEG".
 
-5. Para utilizar solo 3 canales y calcular la potencia espectral de la frecuencia (PSD), ejecuta el archivo `4_LSL_3channel_Banpower`. Este script tomará solo los primeros tres electrodos y calculará la PSD para obtener la EEG_Bandpower, creando una nueva transmisión llamada "AURAPSD".
+5. To use only 3 channels and compute spectral frequency power (PSD), run the file `4_LSL_3channel_Banpower`. This script will take only the first three electrodes and compute the PSD to obtain EEG_Bandpower, creating a new stream called "AURAPSD".
 
-6. Para visualizar "AURAFilteredEEG" y "AURAKalmanFilteredEEG", puedes ejecutar `5_LSL_Graphic`.
+6. To visualize "AURAFilteredEEG" and "AURAKalmanFilteredEEG", you can run `5_LSL_Graphic`.
 
-7. Para calcular la potencia de banda de los datos filtrados, ejecuta el siguiente archivo:
+7. To compute band power from the filtered data, run the following file:
 
-   Este archivo recibe una transmisión LSL de ocho canales EEG con datos de EEG filtrados llamada "AURAFilteredEEG". La salida es una transmisión de 40 canales llamada 'EEG_BANDPOWER_X' que contiene valores normalizados de potencia de banda de las señales de entrada en la siguiente forma:
+   This file receives an LSL stream of eight EEG channels with filtered EEG data called "AURAFilteredEEG". The output is a 40-channel stream called 'EEG_BANDPOWER_X' containing normalized band power values from the input signals in the following form:
 
    - Delta CH1
    - Delta CH2
@@ -86,33 +86,33 @@ Este documento explica los pasos para obtener datos en bruto del software Aura m
    - Beta CH1~CH8
    - Gamma CH1~CH8
 
-### Reproducción
+### Playback
 
-1. **Carga de un Archivo CSV Grabado Anteriormente**: Haz clic en "Archivo" -> "Cargar Conjunto de Datos". Por ejemplo, puedes cargar una muestra de demostración haciendo clic en "Siguiente".
+1. **Load a Previously Recorded CSV File**: Click "File" -> "Load Dataset". For example, you can load a demo sample by clicking "Next".
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_12.png width="60%">
 
-2. **Exploración de Funciones de Reproducción**: Juega con todas las escalas y filtros para las señales. Por ejemplo, prueba el control deslizante de suavidad en el panel FFT.
+2. **Explore Playback Features**: Experiment with all the scales and filters for the signals. For example, try the smoothness slider in the FFT panel.
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_13.png width="60%">
 
-3. **Visualización de Datos en el Modelo 3D del Cerebro**: Puedes rotar el modelo 3D del cerebro y seleccionar qué banda deseas visualizar con los botones debajo del cuero cabelludo.
+3. **Visualize Data on the 3D Brain Model**: You can rotate the 3D brain model and select which band you want to visualize with the buttons below the scalp.
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_14.png width="60%">
 
-### Acelerómetro y Giroscopio
+### Accelerometer and Gyroscope
 
-También puedes verificar las señales de acelerómetro y giroscopio de tu Aura haciendo clic en esta pestaña.
+You can also view your Aura's accelerometer and gyroscope signals by clicking this tab.
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_15.png width="60%">
 
-Esto te desplegará el siguiente panel de visualización.
+This will display the following visualization panel.
 
 <img src=https://github.com/edgarhernandez94/ANUIES/blob/main/WAVEX/AURA_SDK/AuraTutorial1/AuraTutorial_16.png width="60%">
 
 ---
 
-¡Esperamos que este manual te sea útil para sacar el máximo provecho de Aura! Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nuestro equipo de soporte. ¡Disfruta explorando las capacidades de Aura integrado en Wavex!
+We hope this manual helps you get the most out of Aura! If you have any questions or suggestions, feel free to contact our support team. Enjoy exploring Aura's capabilities integrated into Wavex!
 
 
  
